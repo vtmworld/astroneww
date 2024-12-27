@@ -5,11 +5,14 @@ import { defineConfig } from 'astro/config';
 
 //import { defineConfig } from 'astro/config';
 
+import { defineConfig } from 'astro/config';
+
 export default defineConfig({
   site: 'https://vtmworld.github.io/astroneww',
-  trailingSlash: false, // Ensures clean URLs without trailing slashes
-  output: 'static', // GitHub Pages requires static output
+  output: 'static', // Required for GitHub Pages
+  base: '/astroneww/', // Replace with your repository name
 });
+
 
 
 
