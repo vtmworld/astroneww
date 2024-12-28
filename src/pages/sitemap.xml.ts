@@ -1,7 +1,7 @@
 import { jobs } from '../data/jobs.json';
 
 export async function GET() {
-  const baseUrl = 'https://vtmworld.github.io/astroneww/';
+  const baseUrl = 'https://vtmworld.github.io/astroneww';
   
   const jobUrls = jobs.map(job => ({
     url: `${baseUrl}/jobs/${job.ID}`,
