@@ -14,7 +14,7 @@ const { job } = Astro.props;
 
 <article class="job-card">
   <h2 class="job-title">
-    <a href={`/astroneww/jobs/${job.ID}`}>{job.post_title}</a>
+    <a href={`/jobs/${job.ID}`}>{job.post_title}</a>
   </h2>
   <div class="job-meta">
     <time datetime={job.post_date}>
@@ -24,7 +24,7 @@ const { job } = Astro.props;
   <p class="job-excerpt">
     {job.post_content.slice(0, 150)}...
   </p>
-  <a href={`/astroneww/jobs/${job.ID}`} class="read-more">View Details</a>
+  <a href={`/jobs/${job.ID}`} class="read-more">View Details</a>
 </article>
 
 <style>
